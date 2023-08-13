@@ -4,6 +4,7 @@
   <head>
     <title>Kalokoti</title>
     <link rel="stylesheet" href="/styles/home/header.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
   </head>
   <body>
     <nav class="navbar">
@@ -26,21 +27,30 @@
               </li>
               <li class="navbar__item">
                   <a href="/" class="navbar__links">
-                      Membership 
+                      My Boxes 
                   </a>
               </li>
               <li class="navbar__btn">
                   <a href="/" class="button">
-                      Sign up
+                      Sign In
                   </a>
               </li>
           </ul>
+          <li class="navbar__cart">
+            <img src="/assets/icons/white/cart.png" alt="pic" id="navbar__cart">
+          </li>
+          <img src="/assets/logos/box/kalokoti-white-boxed.png" alt="pic" id="navbar__logo">
+          
       </div>
   </nav>
-    <div class="header">
-      <img src="" alt="">
-      <img src="" alt="">
-      <img src="" alt="">
-    </div>
+    <script>
+      const menu = document.querySelector("#mobile-menu");
+      const menuLinks = document.querySelector(".navbar__menu");
+
+      menu.addEventListener("click", function() {
+        menu.classList.toggle("is-active");
+        menuLinks.classList.toggle("active"); 
+      });
+    </script>
   </body>
 </html>
