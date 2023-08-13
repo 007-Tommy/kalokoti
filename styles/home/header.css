@@ -54,7 +54,7 @@
     background: #000000;
     left: 0%;
     top: 100%;
-    opacity: 0.9;
+    opacity: 1;
     transition: all 0.5s ease;
     z-index: 99;
     height: 80vh;
@@ -123,7 +123,7 @@
     border: none;
     outline: none;
     border-radius: 4px;
-    background: #bc55e6;
+    background: linear-gradient( to top, #bc55e6 0%, #6f009c 100%);
     color: #fff;
 }
 
@@ -164,7 +164,3 @@
     transform: translateY(-14px) rotate(-45deg);
 }
 
-.navbar__cart{
-    height: 20%;
-    width: 20%;
-}
