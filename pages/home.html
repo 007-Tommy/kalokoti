@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
   </head>
   <body>
+
+    <!--Navbar Section-->
     <nav class="navbar">
       <div class="navbar__container">
           <div class="navbar__toggle" id="mobile-menu">
@@ -39,6 +41,24 @@
           <img src="/assets/logos/box/kalokoti-white-boxed.png" alt="pic" id="navbar__logo">
       </div>
   </nav>
+      <!--Services Section-->
+      <div class="services">
+        <h1>Special boxes for that special someone</h1>
+        <div class="services__container">
+            <div class="services__card">
+                <h2>Get our membership</h2>
+                <p>With our membership, you can customise your gift boxes</p>
+                <button>Get Started</button>
+            </div>
+            <div class="services__card">
+                <h2>Already have a membership?</h2>
+                <p>Buy more gift modules, or get them for free with loyalty bonuses!</p>
+                <button>Log in</button>
+            </div>
+        </div>
+    </div>
+
+    <!--JS script for the hamburger menu-->
     <script>
       const menu = document.querySelector("#mobile-menu");
       const menuLinks = document.querySelector(".navbar__menu");
@@ -48,5 +68,6 @@
         menuLinks.classList.toggle("active"); 
       });
     </script>
+
   </body>
 </html>

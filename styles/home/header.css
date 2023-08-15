@@ -1,3 +1,4 @@
+/*Page settings*/
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,6 +6,8 @@
     font-family: "Kumbh Sans", sans-serif;
 }
 
+
+/*Navbar CSS*/
 .navbar {
     background: #000000;
     height: 15vh;
@@ -15,6 +18,7 @@
     position: sticky;
     top: 0;
     z-index: 999;
+    margin-bottom: -5%;
 }
 
 .navbar__container {
@@ -28,7 +32,6 @@
 }
 
 #navbar__logo {
-    margin-right: 30vw;
     margin-right: 30vw;
     background-size: 100%;
     display: flex;
@@ -164,3 +167,158 @@
     transform: translateY(-14px) rotate(-45deg);
 }
 
+
+/*Services Section CSS*/
+
+.services{
+    margin-top: none;
+    background: #131313;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 130vh;
+}
+
+@media screen and (max-width: 1980px) {
+	.main__content h1{
+		font-size: 6.5rem;
+		margin-top: 1.5rem;
+	}
+
+	.main__content h2{
+		font-size: 5rem;
+	}
+
+	.main__content p{
+	font-size: 3.5rem;
+        margin-top: 2.5rem;
+}
+}
+
+.services h1{
+    padding-top: 30px;
+    background-color: #6f009c;
+    background-image: linear-gradient( to top, #bc55e6 0%, #6f009c 100%);
+    background-size: 100%;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.services__container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.services__card{
+    margin: 1rem;
+    height: 525px;
+    width: 400px;
+    border-radius: 4px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url("/assets/Images/Products/Wooden box.jpg");
+    background-size: cover;
+    position: relative;
+    color: #fff ;
+}
+
+.services__card:nth-child(2){
+    background-image:"/assets/Images/Products/chocolates.jpg";
+}
+
+.services h2{
+    position: absolute;
+    top: 350px;
+    left: 30px;
+}
+
+.services__card p{
+    position: absolute;
+    top: 400px;
+    left: 30px;
+}
+
+.services__card button{
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #bc55e6;
+    position: absolute;
+    top: 440px;
+    left: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.services__card:hover{
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+
+@media screen and (max-width:960px){
+    .services{
+        height: 1600px;
+    }
+
+    .services h1{
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+}
+@media screen and (max-width: 480px) {
+    .services{
+        height: 1550px;
+    }    
+
+    .services h1{
+        font-size: 2rem;
+        margin-top: 15rem;
+    }
+
+    .services__card{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 1920px) {
+	.services{
+		margin-top: 1rem;
+		height: 1300px;
+	}
+
+	.services h1 {
+		font-size: 7rem;
+		margin-top: 2rem;
+	}
+
+	.services__card {
+		width:500px;
+		height:800px;
+	}
+
+	div.services__card h2 {
+		font-size: 4rem;
+		top:250px;
+		padding-bottom: 300px;
+	}
+
+	div.services__card p {
+		font-size: 2.5rem;
+		top: 450px;
+
+	}
+
+	div.services__card button {
+		font-size: 7rem;
+		top:250px;
+		border-radius: 8px;
+		top: 600px;
+		font-size: 2rem;
+	}
+}
