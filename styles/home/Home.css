@@ -3,7 +3,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Kumbh Sans", sans-serif;
+    font-family: "Manrope", sans-serif;
 }
 
 body {
@@ -13,6 +13,7 @@ body {
 /*Navbar CSS*/
 .navbar {
     background: #000000;
+    min-height: 70px;
     height: 15vh;
     display: flex;
     justify-content: center;
@@ -26,6 +27,7 @@ body {
 
 .navbar__container {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     height: 80px;
     z-index: 1;
@@ -36,9 +38,8 @@ body {
 
 #navbar__logo {
     margin-right: 30vw;
-    background-size: 100%;
-    display: flex;
-    align-items: center;
+    min-height: 30px;
+    height: 10vh;
     cursor: pointer;
 }
 
@@ -70,7 +71,7 @@ body {
 }
 
 .navbar__toggle .bar {
-    width: 50px;
+    width: 2.5vw;
     height: 6px;
     margin: -2px auto 10px auto;
     transition: all 0.5s ease-in-out;
@@ -97,6 +98,7 @@ body {
     padding: 2rem;
     width: 100%;
     display: table;
+    font-size: 5vh;
 }
 
 .navbar__links:hover {
@@ -105,10 +107,8 @@ body {
 }
 
 #mobile-menu {
-    position: absolute;
     top: 20%;
     right: 5%;
-    transform: translate(5%, 20%);
 }
 
 .navbar__btn {
@@ -130,6 +130,7 @@ body {
     border: none;
     outline: none;
     border-radius: 4px;
+    font-size: 5vh;
     background: linear-gradient( to top, #bc55e6 0%, #6f009c 100%);
     color: #fff;
 }
