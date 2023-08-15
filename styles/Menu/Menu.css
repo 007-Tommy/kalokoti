@@ -80,7 +80,7 @@ body {
     height: 100%;
     width: 100%;
 
-    background-image: url(Menu_Background.jpg);
+    background-image: url(/assets/Images/Backgrounds/Menu_Background.jpg);
 
     position: absolute;
     left: 0px;

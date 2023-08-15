@@ -42,22 +42,122 @@
       </div>
   </nav>
 
-      <!--Services Section-->
-      <div class="services">
-        <h1>Special boxes for that special someone</h1>
-        <div class="services__container">
-            <div class="services__card">
-                <h2>Get our membership</h2>
-                <p>With our membership, you can customise your gift boxes</p>
-                <button>Get Started</button>
-            </div>
-            <div class="services__card">
-                <h2>Already have a membership?</h2>
-                <p>Buy more gift modules, or get them for free with loyalty bonuses!</p>
-                <button>Log in</button>
-            </div>
-        </div>
-</div>
+    <!--Redone services section, I didn't like the old one as it felt too boring and the colors felt off-->
+    
+    <div id="card">
+      <div  id="card-image">
+        <img src="https://images.unsplash.com/photo-1673235966910-f2a443bdbaaf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDJ8Q0R3dXdYSkFiRXd8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60" alt="pic">
+      </div>
+    </div>
+    <div id="card2">
+      <div id="card-image2">
+        <img src="https://images.unsplash.com/photo-1674290143192-dbd48683b51c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDgwfENEd3V3WEpBYkV3fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=600&q=60" alt="pic">
+      </div>
+    </div>
+    <div  id="card3">
+      <div id="card-image3">
+        <img src="https://images.unsplash.com/photo-1653549892896-dde02867edee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDQ3fENEd3V3WEpBYkV3fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=600&q=60" alt="pic">
+      </div>
+    </div>
+    <!--static for card1-->
+    <svg style="display: none;">
+      <defs>
+        <filter id="noise">
+          <feTurbulence
+            baseFrequency="0.7,0.8"
+            seed="0"
+            type="fractalNoise"
+            result="static"
+          />
+            <animate
+              attributeName="seed"
+              values="0;100"
+              dur="800ms"
+              repeatCount="1"
+              begin="card.mouseenter"
+            />
+          <feDisplacementMap 
+            in="SourceGraphic" 
+            in2="static" 
+            scale="0"
+          >
+            <animate
+                attributeName="scale"
+                values="0;40;0"
+                dur="800ms"
+                repeatCount="1"
+                begin="card.mouseenter"
+            />
+        </feDisplacementMap>          
+        </filter>
+      </defs>
+    </svg>
+    <!--static for card2-->
+    <svg style="display: none;">
+      <defs>
+        <filter id="noise2">
+          <feTurbulence
+            baseFrequency="0.7,0.8"
+            seed="0"
+            type="fractalNoise"
+            result="static"
+          />
+            <animate
+              attributeName="seed"
+              values="0;100"
+              dur="800ms"
+              repeatCount="1"
+              begin="card2.mouseenter"
+            />
+          <feDisplacementMap 
+            in="SourceGraphic" 
+            in2="static" 
+            scale="0"
+          >
+            <animate
+                attributeName="scale"
+                values="0;40;0"
+                dur="800ms"
+                repeatCount="1"
+                begin="card2.mouseenter"
+            />
+        </feDisplacementMap>          
+        </filter>
+      </defs>
+    </svg>            
+    <!--static for card3-->
+    <svg style="display: none;">
+      <defs>
+        <filter id="noise3">
+          <feTurbulence
+            baseFrequency="0.7,0.8"
+            seed="0"
+            type="fractalNoise"
+            result="static"
+          />
+            <animate
+              attributeName="seed"
+              values="0;100"
+              dur="800ms"
+              repeatCount="1"
+              begin="card3.mouseenter"
+            />
+          <feDisplacementMap 
+            in="SourceGraphic" 
+            in2="static" 
+            scale="0"
+          >
+            <animate
+                attributeName="scale"
+                values="0;40;0"
+                dur="800ms"
+                repeatCount="1"
+                begin="card3.mouseenter"
+            />
+        </feDisplacementMap>          
+        </filter>
+      </defs>
+    </svg>
 
     
     <!--JS script for the hamburger menu-->
@@ -72,4 +172,6 @@
     </script>
 
   </body>
+
+
 </html>

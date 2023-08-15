@@ -6,6 +6,9 @@
     font-family: "Kumbh Sans", sans-serif;
 }
 
+body {
+    background: #060606;
+}
 
 /*Navbar CSS*/
 .navbar {
@@ -45,6 +48,7 @@
     margin: 0;
     width: 100%;
     position: absolute;
+    left: 0%;
     top: -1000px;
     opacity: 0;
     transition: all 0.5s ease;
@@ -167,158 +171,86 @@
     transform: translateY(-14px) rotate(-45deg);
 }
 
+/*Services section*/
 
-/*Services Section CSS*/
-
-.services{
-    margin-top: none;
-    background: #131313;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 120vh;
+#card {  
+    overflow: hidden;
+    margin: 70px 45px 20px 40px;
+    padding: none;
+    display: inline-block;
+    height: 480px;
+    aspect-ratio: 2 / 3;
+    border: 3px solid #adadad;
+    border-radius: 15px;
+    overflow: hidden;
 }
 
-@media screen and (max-width: 1980px) {
-	.main__content h1{
-		font-size: 6.5rem;
-		margin-top: 1.5rem;
-	}
-
-	.main__content h2{
-		font-size: 5rem;
-	}
-
-	.main__content p{
-	font-size: 3.5rem;
-        margin-top: 2.5rem;
-}
-}
-
-.services h1{
-    padding-top: 30px;
-    background-color: #6f009c;
-    background-image: linear-gradient( to top, #bc55e6 0%, #6f009c 100%);
-    background-size: 100%;
-    margin-bottom: 5rem;
-    font-size: 2.5rem;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-}
-
-.services__container{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.services__card{
-    margin: 1rem;
-    height: 525px;
-    width: 400px;
-    border-radius: 4px;
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17,17,17,0.6) 100%), url("/assets/Images/Products/Wooden box.jpg");
-    background-size: cover;
+#card-image {
     position: relative;
-    color: #fff ;
+    height: 100%;
+    width: 100%;
+    filter: url(#noise);
 }
 
-.services__card:nth-child(2){
-    background-image:"/assets/Images/Products/chocolates.jpg";
+
+#card:hover #card-image {
+    animation: pulse 800ms ease-in-out;
 }
 
-.services h2{
-    position: absolute;
-    top: 350px;
-    left: 30px;
+#card2 {  
+    overflow: hidden;
+    margin: 70px 45px 20px 40px;
+    padding: none;
+    display: inline-block;
+    height: 480px;
+    aspect-ratio: 2 / 3;
+    border: 3px solid #adadad;
+    border-radius: 15px;
+    overflow: hidden;
 }
 
-.services__card p{
-    position: absolute;
-    top: 400px;
-    left: 30px;
+#card-image2 {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    filter: url(#noise2);
 }
 
-.services__card button{
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    background: #bc55e6;
-    position: absolute;
-    top: 440px;
-    left: 30px;
-    font-size: 1rem;
-    cursor: pointer;
+
+#card2:hover #card-image2 {
+    animation: pulse 800ms ease-in-out;
 }
 
-.services__card:hover{
-    transform: scale(1.075);
-    transition: 0.2s ease-in;
-    cursor: pointer;
+#card3 {  
+    overflow: hidden;
+    margin: 70px 45px 20px 40px;
+    padding: none;
+    display: inline-block;
+    height: 480px;
+    aspect-ratio: 2 / 3;
+    border: 3px solid #adadad;
+    border-radius: 15px;
+    overflow: hidden;
 }
 
-@media screen and (max-width:960px){
-    .services{
-        height: 1600px;
+#card-image3 {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    filter: url(#noise3);
+}
+
+
+#card3:hover #card-image3 {
+    animation: pulse 800ms ease-in-out;
+}
+
+@keyframes pulse {
+    from, to {
+        transform: scale(1);
     }
 
-    .services h1{
-        font-size: 2rem;
-        margin-top: 2rem;
+    50% {
+        transform: scale(1.08);
     }
-}
-@media screen and (max-width: 480px) {
-    .services{
-        height: 1550px;
-    }    
-
-    .services h1{
-        font-size: 2rem;
-        margin-top: 15rem;
-    }
-
-    .services__card{
-        width: 300px;
-    }
-}
-
-@media screen and (max-width: 1920px) {
-	.services{
-		margin-top: 1rem;
-		height: 1300px;
-	}
-
-	.services h1 {
-		font-size: 7rem;
-		margin-top: 2rem;
-	}
-
-	.services__card {
-		width:500px;
-		height:800px;
-	}
-
-	div.services__card h2 {
-		font-size: 4rem;
-		top:250px;
-		padding-bottom: 300px;
-	}
-
-	div.services__card p {
-		font-size: 2.5rem;
-		top: 450px;
-
-	}
-
-	div.services__card button {
-		font-size: 7rem;
-		top:250px;
-		border-radius: 8px;
-		top: 600px;
-		font-size: 2rem;
-	}
 }
