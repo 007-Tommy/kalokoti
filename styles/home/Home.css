@@ -175,13 +175,13 @@ body {
 
 #card {  
     overflow: hidden;
-    margin: 70px 45px 20px 40px;
+    margin: 10vh 20vw 3vh 20vw;
     padding: none;
     display: inline-block;
-    height: 480px;
+    height: 79vh;
     aspect-ratio: 2 / 3;
-    border: 3px solid #adadad;
-    border-radius: 15px;
+    border: 1rem solid #adadad;
+    border-radius: 1vh;
     overflow: hidden;
 }
 
@@ -199,13 +199,13 @@ body {
 
 #card2 {  
     overflow: hidden;
-    margin: 70px 45px 20px 40px;
+    margin: 10vh 20vw 3vh 20vw;
     padding: none;
     display: inline-block;
-    height: 480px;
+    height: 79vh;
     aspect-ratio: 2 / 3;
-    border: 3px solid #adadad;
-    border-radius: 15px;
+    border: 1rem solid #adadad;
+    border-radius: 1vh;
     overflow: hidden;
 }
 
@@ -223,13 +223,13 @@ body {
 
 #card3 {  
     overflow: hidden;
-    margin: 70px 45px 20px 40px;
+    margin: 10vh 20vw 3vh 20vw;
     padding: none;
     display: inline-block;
-    height: 480px;
+    height: 79vh;
     aspect-ratio: 2 / 3;
-    border: 3px solid #adadad;
-    border-radius: 15px;
+    border: 1rem solid #adadad;
+    border-radius: 1vh;
     overflow: hidden;
 }
 
