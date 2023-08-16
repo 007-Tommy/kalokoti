@@ -1,5 +1,8 @@
+
 body{
     background-color: black;
+    margin: 0;
+    overflow: 0;
 }
 
 a {
@@ -52,7 +55,7 @@ a {
     transform: translate(5%, 20%) rotate(10deg);
 }
 .fancy:hover > .letter:nth-child(2) {
-    transform: translate(-5%, 5%) rotate(-14deg);
+    transform: translate(-5%, 15%) rotate(-14deg);
 }
 .fancy:hover > .letter:nth-child(3) {
     transform: translate(16%, 0%) rotate(1deg);
@@ -61,7 +64,7 @@ a {
     transform: translate(8%, -2%) rotate(-8deg);
 }
 .fancy:hover > .letter:nth-child(5) {
-    transform: translate(-15%, -14%) rotate(6deg);
+    transform: translate(15%, -14%) rotate(6deg);
 }
 .fancy:hover > .letter:nth-child(6) {
     transform: translate(-2%, 16%) rotate(-10deg);
@@ -69,6 +72,7 @@ a {
 .fancy:hover > .letter:nth-child(7) {
     transform: translate(-5%, -20%) rotate(2deg);
 }
-.fancy:hover > .letter:nth-child(7) {
+.fancy:hover > .letter:nth-child(8) {
     transform: translate(14%, 0%) rotate(8deg);
 }
+
