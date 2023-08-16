@@ -1,8 +1,6 @@
 body {
     background-color: rgb(20, 20, 20);
     margin: 0px;
-<<<<<<< Updated upstream
-=======
     overflow: hidden;
 }
 
@@ -37,7 +35,6 @@ body {
     align-items: center;
     cursor: pointer;
     z-index: 999;
->>>>>>> Stashed changes
 }
 
 #menu {
@@ -47,13 +44,10 @@ body {
 }
 
 #menu-items {
-<<<<<<< Updated upstream
-=======
     display: block;
     padding-top: 8rem;
     height: 300rem;
     width: 35vw;
->>>>>>> Stashed changes
     margin-left: clamp(4rem, 20vw, 48rem);
     position: relative;
     z-index: 2;
@@ -69,13 +63,8 @@ body {
 
 .menu-item {
     color: white;
-<<<<<<< Updated upstream
-    font-size: clamp(3rem, 8vw, 8rem);
-    font-family: "Ibarra Real Nova", serif;
-=======
     font-size: clamp(2rem, 6vw, 6rem);
     font-family: "Manrope", sans-serif;
->>>>>>> Stashed changes
 
     display: block;
     text-decoration: none;
