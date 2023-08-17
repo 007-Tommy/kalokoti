@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Kalokoti Products</title>
+    <link rel="stylesheet" href="/styles/Products/Products.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@700&family=Manrope:wght@800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Navbar Section-->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <img
+          src="/assets/logos/box/kalokoti-white-boxed.png"
+          alt="Kalokoti"
+          id="navbar__logo"
+        />
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="Menu.html" class="navbar__links"> Menu </a>
+          </li>
+          <li class="navbar__item">
+            <a href="Home.html" class="navbar__links"> Home </a>
+          </li>
+          <li class="navbar__item">
+            <a href="products.html" class="navbar__links">Contact Us</a>
+          </li>
+          <li class="navbar__btn">
+            <a href="/" class="button"> sign in </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--Redone services section-->
+
+    <div id="card">
+      <div id="card-image">
+        <img
+          src="https://images.unsplash.com/photo-1673235966910-f2a443bdbaaf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDJ8Q0R3dXdYSkFiRXd8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+          alt="pic"
+        />
+      </div>
+    </div>
+    <div id="card2">
+      <div id="card-image2">
+        <img
+          src="https://images.unsplash.com/photo-1674290143192-dbd48683b51c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDgwfENEd3V3WEpBYkV3fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=600&q=60"
+          alt="pic"
+        />
+      </div>
+    </div>
+    <div id="card3">
+      <div id="card-image3">
+        <img
+          src="https://images.unsplash.com/photo-1653549892896-dde02867edee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDQ3fENEd3V3WEpBYkV3fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=600&q=60"
+          alt="pic"
+        />
+      </div>
+    </div>
+    <!--static for card1-->
+    <svg style="display: none">
+      <defs>
+        <filter id="noise">
+          <feTurbulence
+            baseFrequency="0.7,0.8"
+            seed="0"
+            type="fractalNoise"
+            result="static"
+          />
+          <animate
+            attributeName="seed"
+            values="0;100"
+            dur="800ms"
+            repeatCount="1"
+            begin="card.mouseenter"
+          />
+          <feDisplacementMap in="SourceGraphic" in2="static" scale="0">
+            <animate
+              attributeName="scale"
+              values="0;100;0"
+              dur="800ms"
+              repeatCount="1"
+              begin="card.mouseenter"
+            />
+          </feDisplacementMap>
+        </filter>
+      </defs>
+    </svg>
+    <!--static for card2-->
+    <svg style="display: none">
+      <defs>
+        <filter id="noise2">
+          <feTurbulence
+            baseFrequency="0.7,0.8"
+            seed="0"
+            type="fractalNoise"
+            result="static"
+          />
+          <animate
+            attributeName="seed"
+            values="0;100"
+            dur="800ms"
+            repeatCount="1"
+            begin="card2.mouseenter"
+          />
+          <feDisplacementMap in="SourceGraphic" in2="static" scale="0">
+            <animate
+              attributeName="scale"
+              values="0;100;0"
+              dur="800ms"
+              repeatCount="1"
+              begin="card2.mouseenter"
+            />
+          </feDisplacementMap>
+        </filter>
+      </defs>
+    </svg>
+    <!--static for card3-->
+    <svg style="display: none">
+      <defs>
+        <filter id="noise3">
+          <feTurbulence
+            baseFrequency="0.7,0.8"
+            seed="0"
+            type="fractalNoise"
+            result="static"
+          />
+          <animate
+            attributeName="seed"
+            values="0;100"
+            dur="800ms"
+            repeatCount="1"
+            begin="card3.mouseenter"
+          />
+          <feDisplacementMap in="SourceGraphic" in2="static" scale="0">
+            <animate
+              attributeName="scale"
+              values="0;100;0"
+              dur="800ms"
+              repeatCount="1"
+              begin="card3.mouseenter"
+            />
+          </feDisplacementMap>
+        </filter>
+      </defs>
+    </svg>
+
+    <!--JS script for the hamburger menu-->
+    <script>
+      const menu = document.querySelector("#mobile-menu");
+      const menuLinks = document.querySelector(".navbar__menu");
+
+      menu.addEventListener("click", function () {
+        menu.classList.toggle("is-active");
+        menuLinks.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

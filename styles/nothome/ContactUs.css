@@ -52,25 +52,25 @@ a {
 }
 
 .fancy:hover > .letter:nth-child(1) {
-    transform: translate(5%, 20%) rotate(10deg);
+    transform: translate(10%, -20%) rotate(6deg);
 }
 .fancy:hover > .letter:nth-child(2) {
-    transform: translate(-5%, 15%) rotate(-14deg);
+    transform: translate(-5%, 15%) rotate(-10deg);
 }
 .fancy:hover > .letter:nth-child(3) {
-    transform: translate(16%, 0%) rotate(1deg);
+    transform: translate(13%, 17%) rotate(19deg);
 }
 .fancy:hover > .letter:nth-child(4) {
-    transform: translate(8%, -2%) rotate(-8deg);
+    transform: translate(8%, -20%) rotate(-18deg);
 }
 .fancy:hover > .letter:nth-child(5) {
-    transform: translate(15%, -14%) rotate(6deg);
+    transform: translate(15%, -14%) rotate(16deg);
 }
 .fancy:hover > .letter:nth-child(6) {
-    transform: translate(-2%, 16%) rotate(-10deg);
+    transform: translate(8%, 16%) rotate(-10deg);
 }
 .fancy:hover > .letter:nth-child(7) {
-    transform: translate(-5%, -20%) rotate(2deg);
+    transform: translate(5%, -20%) rotate(2deg);
 }
 .fancy:hover > .letter:nth-child(8) {
     transform: translate(14%, 0%) rotate(8deg);
