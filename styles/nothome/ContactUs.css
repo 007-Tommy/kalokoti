@@ -1,39 +1,54 @@
+* {
+    font-family: "Cherry Bomb One", cursive;
+}
+
 
 body{
     background-color: black;
-    margin: 0;
+    padding: 3vh 7vw;
     overflow: 0;
+    padding: 5vh 5vw;
 }
 
 a {
     text-decoration: none;
+    background: -webkit-linear-gradient(#7400e0, #c104e7);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-left: 1vw;
 }
 
 #text {
-    padding: 3rem 5rem;
-    height: 80vh;
-    width: 80vw;
+    height: 90vh;
+    width: 90vw;
     opacity: 1;
 }
 
 .word {
     color: white;
-    font-size: 9vw;
-    font-family: "Rubik", sans-serif;
+    font-size: 7.5vw;
+    font-family: "Cherry Bomb One", cursive;
     margin: 0rem;
-    text-transform: uppercase;
-    opacity: 1;
     transition: 800ms ease;
+    padding-right: 5vw;
 }
-
 .word .fancy {
     opacity: 1;
 }
 
 .line {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     opacity: 1;
+}
+
+#Email-link {
+    background: linear-gradient(0, rgb(255, 123, 0), rgb(253, 30, 0));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-left: 1vw;
 }
 
 
@@ -52,25 +67,25 @@ a {
 }
 
 .fancy:hover > .letter:nth-child(1) {
-    transform: translate(10%, -20%) rotate(6deg);
+    transform: translate(5%, 20%) rotate(10deg);
 }
 .fancy:hover > .letter:nth-child(2) {
-    transform: translate(-5%, 15%) rotate(-10deg);
+    transform: translate(-5%, 15%) rotate(-14deg);
 }
 .fancy:hover > .letter:nth-child(3) {
-    transform: translate(13%, 17%) rotate(19deg);
+    transform: translate(16%, 0%) rotate(1deg);
 }
 .fancy:hover > .letter:nth-child(4) {
-    transform: translate(8%, -20%) rotate(-18deg);
+    transform: translate(8%, -2%) rotate(-8deg);
 }
 .fancy:hover > .letter:nth-child(5) {
-    transform: translate(15%, -14%) rotate(16deg);
+    transform: translate(15%, -14%) rotate(6deg);
 }
 .fancy:hover > .letter:nth-child(6) {
-    transform: translate(8%, 16%) rotate(-10deg);
+    transform: translate(-2%, 16%) rotate(-10deg);
 }
 .fancy:hover > .letter:nth-child(7) {
-    transform: translate(5%, -20%) rotate(2deg);
+    transform: translate(-5%, -20%) rotate(2deg);
 }
 .fancy:hover > .letter:nth-child(8) {
     transform: translate(14%, 0%) rotate(8deg);

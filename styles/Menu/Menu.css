@@ -4,48 +4,15 @@ body {
     overflow: hidden;
 }
 
-.navbar {
-    background: transparent;
-    height: 15vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    position: sticky;
-    top: 0;
-}
-
-.navbar__container {
-    display: center;
-    justify-content: space-between;
-    z-index: 1;
-    width: 100%;
-    max-width: 1300px;
-    padding: 0 50px;
-}
-
-.navbar__logo {
-    font-family: "Manrope" sans-serif;
-    font-weight: 900;
-    margin-left: 68vw;
-    font-size: 8vw;
-    color: white;
-    background-size: 100%;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    z-index: 999;
-}
-
 #menu {
     height: 75vh;
     display: center;
-    align-items: center;    
+    align-items: center;   
 }
 
 #menu-items {
     display: block;
-    padding-top: 1rem;
+    padding-top: 8rem;
     height: 300rem;
     width: 35vw;
     margin-left: clamp(4rem, 20vw, 48rem);
@@ -61,15 +28,19 @@ body {
     opacity: 1;
 }
 
-.menu-item {
+.menu-item{
     color: white;
     font-size: clamp(2rem, 6vw, 6rem);
-    font-family: "Manrope", serif;
+    font-family: "Manrope", sans-serif;
 
     display: block;
     text-decoration: none;
     padding: 0.25rem 0rem;
     transition: opacity 400ms ease;
+}
+
+#logo {
+    height: clamp(3rem, 8vw, 8rem);
 }
 
 #menu-background-pattern {
@@ -99,18 +70,22 @@ body {
 }
 
 #menu[data-active-index="0"] > #menu-background-pattern {
-    background-position: 0% -25%;
+    background-position: 0% -20%;
 }
 
 #menu[data-active-index="1"] > #menu-background-pattern {
-    background-position: 0% -50%;
+    background-position: 0% -40%;
 }
 
 #menu[data-active-index="2"] > #menu-background-pattern {
-    background-position: 0% -75%;
+    background-position: 0% -60%;
 }
 
 #menu[data-active-index="3"] > #menu-background-pattern {
+    background-position: 0% -80%;
+}
+
+#menu[data-active-index="4"] > #menu-background-pattern {
     background-position: 0% -100%;
 }
 
@@ -154,6 +129,10 @@ body {
 
 #menu[data-active-index="3"] > #menu-background-image {
     background-position: center 75%;
+}
+
+#menu[data-active-index="4"] > #menu-background-image {
+    background-position: center 85%;
 }
 
 
