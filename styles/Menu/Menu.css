@@ -4,43 +4,12 @@ body {
     overflow: hidden;
 }
 
-.navbar {
-    background: transparent;
-    height: 15vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    position: sticky;
-    top: 0;
-}
-
-.navbar__container {
-    display: center;
-    justify-content: space-between;
-    z-index: 1;
-    width: 100%;
-    max-width: 1300px;
-    padding: 0 50px;
-}
-
-.navbar__logo {
-    font-family: "Manrope", sans-serif;
-    font-weight: 900;
-    margin-left: 68vw;
-    font-size: 8vw;
-    color: white;
-    background-size: 100%;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    z-index: 999;
-}
-
 #menu {
-    height: 100vh;
-    display: flex;
-    align-items: center;    
+    height: 75vh;
+    display: center;
+    align-items: center;   
+    padding-top: 12.5vh;
+    padding-bottom: 12.5vh;
 }
 
 #menu-items {
@@ -61,7 +30,7 @@ body {
     opacity: 1;
 }
 
-.menu-item {
+.menu-item{
     color: white;
     font-size: clamp(2rem, 6vw, 6rem);
     font-family: "Manrope", sans-serif;
@@ -72,9 +41,8 @@ body {
     transition: opacity 400ms ease;
 }
 
-#title {
-    height: clamp(2rem, 6vw, 6rem);
-    opacity: 0.25;
+#logo {
+    height: clamp(3rem, 8vw, 8rem);
 }
 
 #menu-background-pattern {
