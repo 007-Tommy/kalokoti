@@ -25,9 +25,11 @@ body {
 }
 
 .navbar__logo {
+    text-decoration: none;
     font-family: "Manrope" sans-serif;
+    opacity: 1;
     font-weight: 900;
-    margin-left: 68vw;
+    margin-left: 63vw;
     font-size: 8vw;
     color: white;
     background-size: 100%;
@@ -47,7 +49,7 @@ body {
     display: block;
     padding-top: 1rem;
     height: 300rem;
-    width: 35vw;
+    width: 30vw;
     margin-left: clamp(4rem, 20vw, 48rem);
     position: relative;
     z-index: 2;
@@ -63,7 +65,7 @@ body {
 
 .menu-item {
     color: white;
-    font-size: clamp(2rem, 6vw, 6rem);
+    font-size: 13vh;
     font-family: "Manrope", serif;
 
     display: block;
