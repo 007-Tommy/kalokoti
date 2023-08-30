@@ -13,8 +13,8 @@ body {
 /*Navbar CSS*/
 .navbar {
     background: #000000;
-    min-height: 70px;
-    height: 15vh;
+    min-height: 50px;
+    height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,15 +31,14 @@ body {
     justify-content: space-between;
     height: 80px;
     z-index: 1;
-    width: 100%;
-    max-width: 1300px;
+    width: 80%;
     padding: 0 50px;
 }
 
 #navbar__logo {
     margin-right: 30vw;
-    min-height: 30px;
-    height: 10vh;
+    min-height: 25px;
+    height: 5vh;
     cursor: pointer;
 }
 
@@ -76,6 +75,8 @@ body {
     margin: -2px auto 10px auto;
     transition: all 0.5s ease-in-out;
     background: #fff;
+    display: block;
+    cursor: pointer;
 }
 
 .navbar__item {
@@ -89,11 +90,7 @@ body {
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    padding: 0 1rem;
     height: 100%;
-}
-
-.navbar__links {
     text-align: center;
     padding: 2rem;
     width: 100%;
@@ -155,21 +152,16 @@ body {
     padding: 2rem;
 }
 
-.navbar__toggle .bar {
-    display: block;
-    cursor: pointer;
-}
-
 #mobile-menu.is-active .bar:nth-child(2) {
     opacity: 0;
 }  
 
 #mobile-menu.is-active .bar:nth-child(1) {
-    transform: translateY(14px) rotate(45deg);
+    transform: translateY(1.2vh) rotate(45deg);
 }
 
 #mobile-menu.is-active .bar:nth-child(3) {
-    transform: translateY(-14px) rotate(-45deg);
+    transform: translateY(-2vh) rotate(-45deg);
 }
 
 /*Services section*/
